@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const faqItems = document.querySelectorAll('.faq-item');
+    const faqItems = document.querySelectorAll('#faq .faq-item');
 
     faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-
+        const question = item.querySelector('h3');
         question.addEventListener('click', () => {
             item.classList.toggle('active');
         });
