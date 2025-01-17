@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #29644b; /* 배경색 */
+    color: white; /* 기본 글자색 */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#hero img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.buttons .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #29644b;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#tokenomics .supply {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#tokenomics .zero {
+    color: #c2e682; /* 'ZERO!' 색상 */
+}
+
+#tokenomics .revoked {
+    color: #f05454; /* 'REVOKED!' 색상 */
+}
+
+#tokenomics .burnt {
+    color: #939dd9; /* 'BURNT!' 색상 */
+}
+
+#yournuts {
+    background-color: #f05454;
+}
+
+#tobeornuttobe {
+    background-color: #c2e682;
+    color: #29644b;
+}
+
+#faq .faq-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#faq .faq-item h3 {
+    margin-top: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#faq .faq-item h3::after {
+    content: '+';
+    font-size: 1.2em;
+}
+
+#faq .faq-item.active h3::after {
+    content: '-';
+}
+
+#faq .faq-item > div {
+    display: none;
+    padding-top: 10px;
+}
+
+#faq .faq-item.active > div {
+    display: block;
+}
+
+#bottom-button .button {
+    /* 'BUY NOW' 버튼 스타일 */
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #29644b;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer .footer-logo {
+    font-size: 1.2em;
+    font-weight: bold;
+}
